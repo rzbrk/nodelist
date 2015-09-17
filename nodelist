@@ -1,0 +1,23 @@
+#!/usr/bin/perl
+
+use strict;
+use warnings;
+use JSON::Parse 'parse_json';
+use Data::Dumper;
+
+# Read JSON data from STDIN
+my $content = <>;
+
+# Parse JSON data
+my $json_text = parse_json ( $content );
+#print Dumper($json_text);
+
+# Loop over nodes
+foreach my $node (keys %{$json_text->{nodes}})
+{
+    # hostname
+    print "\"$json_text->{nodes}->{$node}->{nodeinfo}->{hostname}\", ";
+    # mac address
+    print "\"$json_text->{nodes}->{$node}->{nodeinfo}->{network}->{mac}\"\n";
+}
+

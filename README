@@ -1,3 +1,10 @@
+Perl Dependencies:
+------------------
+
+Install the following Pewrl modules (e.g. via cpan):
+  JSON::Parser
+  Data::Dumper (recommended)
+
 Usage:
 ------
 

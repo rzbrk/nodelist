@@ -16,7 +16,7 @@ my $json_text = parse_json ( $content );
 foreach my $node (keys %{$json_text->{nodes}})
 {
     # hostname
-    print "\"$json_text->{nodes}->{$node}->{nodeinfo}->{hostname}\", ";
+    print "\"$json_text->{nodes}->{$node}->{nodeinfo}->{hostname}\",";
     # mac address
     print "\"$json_text->{nodes}->{$node}->{nodeinfo}->{network}->{mac}\"\n";
 }

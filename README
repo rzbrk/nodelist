@@ -1,0 +1,9 @@
+Usage:
+------
+
+Fetch JSON from WWW:
+  curl -k https://freifunk-troisdorf.de/nodes.json | ./nodelist
+
+Read local copy of JSON:
+  cat nodes.json | ./nodelist
+

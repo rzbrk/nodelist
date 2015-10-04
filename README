@@ -1,7 +1,7 @@
 Perl Dependencies:
 ------------------
 
-Install the following Pewrl modules (e.g. via cpan):
+Install the following Perl modules (e.g. via cpan):
   JSON::Parser
   Data::Dumper (recommended)
 
@@ -9,7 +9,7 @@ Usage:
 ------
 
 Fetch JSON from WWW:
-  curl -k https://freifunk-troisdorf.de/nodes.json | ./nodelist
+  curl -k https://map.freifunk-troisdorf.de/nodes.json | ./nodelist
 
 Read local copy of JSON:
   cat nodes.json | ./nodelist
